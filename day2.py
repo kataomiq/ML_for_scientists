@@ -25,11 +25,11 @@ class Student:
     return f'{self.name}, {self.ID}, {self.scores}, {average:.2f}'
 
 
-student = Student("John", "12345")
+"""student = Student("John", "12345")
 student.add_score("Maths", 5)
 student.add_score("Physics", 4)
 
-print(student.display_info())
+print(student.display_info())"""
 
 
 class Shape(ABC):
@@ -96,7 +96,7 @@ class Triangle(Shape):
   def perimeter(self):
     pass
 
-circle = Circle(5)
+"""circle = Circle(5)
 rectangle = Rectangle(4, 6)  # ширина 4, высота 6
 triangle = Triangle(3, 4)  # основание 3, высота 4
 
@@ -119,4 +119,16 @@ print()
 print("Triangle:")
 print("Area:", triangle.area())
 print("Perimeter:", triangle.perimeter())
-print("Display:", triangle.display())
+print("Display:", triangle.display())"""
+
+
+from datasets import load_dataset
+from itertools import islice
+
+dataset = load_dataset('ddrg/named_math_formulas', split='train', streaming=True)
+
+subset = list(islice(dataset, 10))
+
+for example in subset:
+    print(example)
+

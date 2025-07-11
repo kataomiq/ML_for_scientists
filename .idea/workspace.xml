@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4cc73dad-962b-42cd-8646-f453bd2d8cc2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/ML_for_scientists.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ML_for_scientists.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day2.py" beforeDir="false" afterPath="$PROJECT_DIR$/day2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formula_annotation.py" beforeDir="false" afterPath="$PROJECT_DIR$/formula_annotation.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +48,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python.day2.executor": "Run",
     "Python.formmula_tokenization.executor": "Run",
+    "Python.formula_annotation.executor": "Run",
     "Python.latex_formula_extractor.executor": "Run",
     "Python.main.executor": "Run",
     "Python.untitled25.executor": "Run",

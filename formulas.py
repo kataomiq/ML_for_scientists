@@ -1,0 +1,22 @@
+math_formulas = [
+    r"\frac{d}{dx}\left( \int_{a}^{x} f(t)\,dt \right) = f(x)",
+    r"\sum_{n=1}^{\infty} \frac{1}{n^2} = \frac{\pi^2}{6}",
+    r"e^{i\pi} + 1 = 0",
+    r"\nabla \cdot \mathbf{E} = \frac{\rho}{\epsilon_0}",
+    r"\binom{n}{k} = \frac{n!}{k!(n-k)!}",
+    r"\lim_{x \to 0} \frac{\sin x}{x} = 1",
+    r"\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}",
+    r"F = ma",
+    r"\det \begin{pmatrix} a & b \\ c & d \end{pmatrix} = ad - bc",
+    r"\forall \epsilon > 0, \exists \delta > 0 : |x - a| < \delta \Rightarrow |f(x) - L| < \epsilon",
+    r"\frac{\partial u}{\partial t} = \alpha \nabla^2 u",
+    r"\vec{F} = q(\vec{E} + \vec{v} \times \vec{B})",
+    r"\mathcal{L} = \frac{1}{2} (\partial_\mu \phi)^2 - V(\phi)",
+    r"\oint_C \mathbf{F} \cdot d\mathbf{r} = \iint_S (\nabla \times \mathbf{F}) \cdot d\mathbf{S}",
+    r"x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}",
+    r"\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt",
+    r"\langle \psi | \hat{H} | \psi \rangle = E",
+    r"\frac{dy}{dx} + P(x)y = Q(x)",
+    r"\mathbb{E}[X] = \int_{-\infty}^{\infty} x f(x) dx",
+    r"\begin{cases} \dot{x} = \sigma(y - x) \\ \dot{y} = x(\rho - z) - y \\ \dot{z} = xy - \beta z \end{cases}"
+]

@@ -224,6 +224,21 @@
       {"char": "mod", "latex": "\\bmod", "unicode": "U+006D U+006F U+0064", "is_command": true}
     ],
   "GEOM": [
+      {"char": "sin", "latex": "\\sin", "unicode": "", "is_command": true},
+      {"char": "cos", "latex": "\\cos", "unicode": "", "is_command": true},
+      {"char": "tan", "latex": "\\tan", "unicode": "", "is_command": true},
+      {"char": "cot", "latex": "\\cot", "unicode": "", "is_command": true},
+      {"char": "sec", "latex": "\\sec", "unicode": "", "is_command": true},
+      {"char": "csc", "latex": "\\csc", "unicode": "", "is_command": true},
+      {"char": "arcsin", "latex": "\\arcsin", "unicode": "", "is_command": true},
+      {"char": "arccos", "latex": "\\arccos", "unicode": "", "is_command": true},
+      {"char": "arctan", "latex": "\\arctan", "unicode": "", "is_command": true},
+      {"char": "arccot", "latex": "\\operatorname{arccot}", "unicode": "", "is_command": true},
+      {"char": "arcsec", "latex": "\\operatorname{arcsec}", "unicode": "", "is_command": true},
+      {"char": "arccsc", "latex": "\\operatorname{arccsc}", "unicode": "", "is_command": true},
+      {"char": "cosh", "latex": "\\cosh", "unicode": "", "is_command": true},
+      {"char": "tanh", "latex": "\\tanh", "unicode": "", "is_command": true},
+      {"char": "coth", "latex": "\\coth", "unicode": "", "is_command": true},
       {"char": "⊥", "latex": "\\perp", "unicode": "U+22A5", "is_command": true},
       {"char": "∠", "latex": "\\angle", "unicode": "U+2220", "is_command": true},
       {"char": "∢", "latex": "\\sphericalangle", "unicode": "U+2222", "is_command": true},
@@ -328,12 +343,7 @@
 
   "REP": [
       {"char": "∑", "latex": "\\sum", "unicode": "U+2211", "is_command": true},
-      {"char": "∏", "latex": "\\prod", "unicode": "U+220F", "is_command": true},
-      {"char": "∫", "latex": "\\int", "unicode": "U+222B", "is_command": true},
-      {"char": "∬", "latex": "\\iint", "unicode": "U+222C", "is_command": true},
-      {"char": "∭", "latex": "\\iiint", "unicode": "U+222D", "is_command": true},
-      {"char": "⨌", "latex": "\\iiiint", "unicode": "U+2A0C", "is_command": true},
-      {"char": "∮", "latex": "\\oint", "unicode": "U+222E", "is_command": true}
+      {"char": "∏", "latex": "\\prod", "unicode": "U+220F", "is_command": true}
     ],
 
   "MAT": [
@@ -343,7 +353,7 @@
   "COMB": [
       {"char": "gcd", "latex": "\\gcd", "unicode": "U+0064", "is_command": true},
       {"char": "lcm", "latex": "\\operatorname{lcm}", "unicode": "U+006D", "is_command": true},
-      {"char": "C(n,k)", "latex": "\\binom{n}{k}", "unicode": "U+0043 U+0028 U+006E U+002C U+006B U+0029", "is_command": true}
+      {"char": "C(n,k)", "latex": "\\binom", "unicode": "U+0043 U+0028 U+006E U+002C U+006B U+0029", "is_command": true}
     ],
 
   "DIFF": [
@@ -353,7 +363,12 @@
       {"char": "∇", "latex": "\\nabla", "unicode": "U+2207", "is_command": true},
       {"char": "′", "latex": "\\prime", "unicode": "U+2032", "is_command": true},
       {"char": "‵", "latex": "\\backprime", "unicode": "U+2035", "is_command": true},
-      {"char": "'", "latex": "'", "unicode": "U+0066 U+0027", "is_command": false}
+      {"char": "'", "latex": "'", "unicode": "U+0066 U+0027", "is_command": false},
+      {"char": "∫", "latex": "\\int", "unicode": "U+222B", "is_command": true},
+      {"char": "∬", "latex": "\\iint", "unicode": "U+222C", "is_command": true},
+      {"char": "∭", "latex": "\\iiint", "unicode": "U+222D", "is_command": true},
+      {"char": "⨌", "latex": "\\iiiint", "unicode": "U+2A0C", "is_command": true},
+      {"char": "∮", "latex": "\\oint", "unicode": "U+222E", "is_command": true}
     ],
 
   "OTHER": [

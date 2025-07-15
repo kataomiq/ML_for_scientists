@@ -3,7 +3,7 @@ import argparse
 from pathlib import Path
 
 
-file_path = 'file.tex'
+
 
 def extract_latex_formulas(tex_content):
     """
@@ -130,7 +130,15 @@ def main():
     if file_path.suffix.lower() != '.tex':
         print(f"⚠️ Warning: File extension is not .tex ({file_path.suffix})")
 
-    process_tex_file(file_path)
+    formulas = process_tex_file(file_path)
+
+    # formulas — это список строк с формулами, теперь можно сохранить их в файл, базу или вернуть из функции
+    # Например, сохранить в текстовый файл
+    with open("extracted_formulas.txt", "w", encoding="utf-8") as out_file:
+        for f in formulas:
+            out_file.write(f + "\n\n")
+
+    print(f"\n✅ Формулы сохранены в extracted_formulas.txt")
 
 
 if __name__ == "__main__":

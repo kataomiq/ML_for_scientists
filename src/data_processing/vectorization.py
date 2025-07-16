@@ -16,6 +16,7 @@ def vectorize_formulas(formulas):
     :return: X — разреженная матрица признаков, vectorizer — обученный TfidfVectorizer
     """
     vectorizer = TfidfVectorizer(tokenizer=custom_tokenizer)
+
     X = vectorizer.fit_transform(formulas)
     return X, vectorizer
 

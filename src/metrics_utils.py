@@ -1,5 +1,6 @@
 from sklearn.metrics import classification_report
 from sklearn.metrics import confusion_matrix
+from sklearn.inspection import permutation_importance
 import matplotlib.pyplot as plt
 import seaborn as sns
 
@@ -85,3 +86,40 @@ def print_report_dict(true, prediction):
 
 def print_report_table(true, prediction):
     print(classification_report(true, prediction))
+
+
+
+def print_token_importances(clf, X_test, Y_test, vectorizer, repeats=50, random=42):
+    """
+    Выводит важность токенов на основе permutation importance.
+
+    Параметры:
+    - clf: обученный классификатор
+    - X_test: матрица признаков тестовой выборки (scipy matrix)
+    - Y_test: целевые метки тестовой выборки
+    - vectorizer: объект TfidfVectorizer, использованный для векторизации
+    - repeats: количество повторов при permutation importance
+    - random: random_state для воспроизводимости
+    """
+    result = permutation_importance(
+        clf,
+        X_test.toarray(),
+        Y_test,
+        n_repeats=repeats,
+        random_state=random,
+        scoring='f1_weighted'
+    )
+
+    feature_names = vectorizer.get_feature_names_out()
+    importances = result.importances_mean
+
+    tokens_with_scores = sorted(
+        zip(feature_names, importances),
+        key=lambda x: x[1],
+        reverse=True
+    )
+
+    for token, score in tokens_with_scores:
+        print(f"{token:10s} — {score:.6f}")
+
+

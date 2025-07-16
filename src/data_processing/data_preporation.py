@@ -17,5 +17,5 @@ label_vectors = encoder.fit_transform(np.array(formula_labels).reshape(-1, 1))
 
 
 def load_labeled_formulas():
-    return all_formulas, label_vectors, encoder
+    return all_formulas, label_vectors, encoder, labels
 

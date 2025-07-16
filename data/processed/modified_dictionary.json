@@ -407,8 +407,6 @@
   "ID": [
       {"char": "ẏ", "latex": "\\dot", "unicode": "U+1E8F", "is_command": true},
       {"char": "ÿ", "latex": "\\ddot", "unicode": "U+00FF", "is_command": true},
-      {"char": "a²", "latex": "^", "unicode": "U+222E", "is_command": false},
-      {"char": "a_2", "latex": "_", "unicode": "U+222E", "is_command": false},
 
       {"char": "¹₂X", "latex": "\\sideset", "unicode": "U+00B9", "is_command": true},
       {"char": "⌢", "latex": "\\overset{\\frown}", "unicode": "U+0041 U+0042 U+2322", "is_command": true},
@@ -426,16 +424,10 @@
       {"char": "¬", "latex": "\\neg", "unicode": "U+00AC", "is_command": true},
       {"char": "̸R", "latex": "\\not", "unicode": "U+0338 U+0052", "is_command": true},
 
-      {"char": "(","latex": "(","unicode": "U+0028", "is_command": false},
-      {"char": ")","latex": ")","unicode": "U+0029", "is_command": false},
       {"char": "[","latex": "[","unicode": "U+005B", "is_command": false},
       {"char": "]","latex": "]","unicode": "U+005D", "is_command": false},
       {"char": "[","latex": "\\lbrack","unicode": "U+005D", "is_command": true},
       {"char": "]","latex": "\\rbrack","unicode": "U+005D", "is_command": true},
-      {"char": "{","latex": "{","unicode": "U+005D", "is_command": false},
-      {"char": "}","latex": "}","unicode": "U+005D", "is_command": false},
-      {"char": "{","latex": "\\lbrace","unicode": "U+005D", "is_command": true},
-      {"char": "}","latex": "\\rbrace","unicode": "U+005D", "is_command": true},
       {"char": "⟨", "latex": "\\langle", "unicode": "U+27E8", "is_command": true},
       {"char": "⟩", "latex": "\\rangle", "unicode": "U+27E9", "is_command": true},
       {"char": "|", "latex": "\\vert", "unicode": "U+007C", "is_command": true},
@@ -445,7 +437,6 @@
       {"char": "⌈", "latex": "\\lceil", "unicode": "U+2308", "is_command": true},
       {"char": "⌉", "latex": "\\rceil", "unicode": "U+2309", "is_command": true},
       {"char": "/", "latex": "/", "unicode": "U+002F", "is_command": false},
-      {"char": "\\", "latex": "\\backslash", "unicode": "U+005C", "is_command": true},
       {"char": "$", "latex": "$", "unicode": "U+005C", "is_command": true},
       {"char": "fun()", "latex": "\\operatorname", "unicode": "U+005C", "is_command": true},
       {"char": "%", "latex": "\\%", "unicode": "U+0025", "is_command": true},

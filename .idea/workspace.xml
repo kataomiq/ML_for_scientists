@@ -5,17 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4cc73dad-962b-42cd-8646-f453bd2d8cc2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/data/raw/file.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/raw/formulas.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data_processing/formula_annotation.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dictionary.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/processed/dictionary.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/formmula_tokenization.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data_processing/formmula_tokenization.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/formula_annotation.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/formulas.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/latex_formula_extractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data_processing/latex_formula_extractor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modified_dictionary.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/processed/modified_dictionary.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/processed/modified_dictionary.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/processed/modified_dictionary.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data_processing/Latex_processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data_processing/Latex_processor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data_processing/data_preporation.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data_processing/data_preporation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data_processing/formmula_tokenization.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data_processing/formmula_tokenization.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data_processing/vectorization.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data_processing/vectorization.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/metrics_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/metrics_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/train_svm.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/train_svm.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,25 +53,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.SVM.executor&quot;: &quot;Run&quot;,
-    &quot;Python.asd.executor&quot;: &quot;Run&quot;,
-    &quot;Python.day2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.extracted_formula.executor&quot;: &quot;Run&quot;,
-    &quot;Python.formmula_tokenization.executor&quot;: &quot;Run&quot;,
-    &quot;Python.formula_annotation.executor&quot;: &quot;Run&quot;,
-    &quot;Python.formulas.executor&quot;: &quot;Run&quot;,
-    &quot;Python.latex_formula_extractor.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.untitled25.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.Latex_processor.executor": "Run",
+    "Python.SVM.executor": "Run",
+    "Python.asd.executor": "Run",
+    "Python.dataset_parce.executor": "Run",
+    "Python.day2.executor": "Run",
+    "Python.extracted_formula.executor": "Run",
+    "Python.formmula_tokenization.executor": "Run",
+    "Python.formula_annotation.executor": "Run",
+    "Python.formulas.executor": "Run",
+    "Python.latex_formula_extractor.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.metrics_utils.executor": "Run",
+    "Python.untitled25.executor": "Run",
+    "Python.vectorization.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\veder\PycharmProjects\ML_for_scientists\src" />
@@ -99,5 +102,16 @@
       <updated>1751880162754</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

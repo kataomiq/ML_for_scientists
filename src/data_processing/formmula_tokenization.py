@@ -3,7 +3,7 @@ import re
 import pandas as pd
 
 class LatexTokenizer:
-    def __init__(self, json_path='cleaned_dictionary.json'):
+    def __init__(self, json_path='C:\\Users\\veder\\PycharmProjects\\ML_for_scientists\\data\\processed\\cleaned_dictionary.json'):
         """
         Инициализация токенизатора
         :param json_path: путь к JSON-файлу словаря
@@ -16,24 +16,24 @@ class LatexTokenizer:
         self._build_mappings()
 
     def _build_mappings(self):
-        """Построение внутренних отображений"""
         self.latex_category_map = {}
-        for category in ['symbols', 'constant', 'operations', 'identifier']:
-            for entry in self.data[category]:
-                self.latex_category_map[entry['latex']] = category
-
-        # Отображение символов на категории
         self.char_category_map = {}
-        for category in ['symbols', 'constant', 'operations', 'identifier']:
-            for entry in self.data[category]:
-                self.char_category_map[entry['char']] = category
 
-        # Множество цифр
-        self.number_chars = {entry['char'] for entry in self.data['constant'] if entry['char'].isdigit()}
-        # Множество переменных
-        self.var_chars = {entry['char'] for entry in self.data['symbols']}
+        for category, entries in self.data.items():
+            for entry in entries:
+                latex = entry.get('latex')
+                char = entry.get('char')
+                if latex is not None:
+                    self.latex_category_map[latex] = category
+                if char is not None:
+                    self.char_category_map[char] = category
 
-        # Список LaTeX-команд, отсортированных по убыванию длины (для приоритета длинных команд)
+        # Теперь сформируем множества для цифр и переменных из соответствующих категорий:
+        self.number_chars = {entry['char'] for entry in self.data.get('NUM', []) if
+                             'char' in entry and entry['char'].isdigit()}
+        self.var_chars = {entry['char'] for entry in self.data.get('VAR', []) if 'char' in entry}
+
+        # Список LaTeX-команд отсортируем по убыванию длины
         self.latex_list = sorted(
             self.latex_category_map.keys(),
             key=lambda x: (-len(x), x)
@@ -75,30 +75,27 @@ class LatexTokenizer:
         return self._encode_tokens(tokens)
 
     def _encode_tokens(self, tokens):
-        """Внутренний метод кодирования токенов"""
         encoded = []
         for token in tokens:
-            # Случай 1: известная LaTeX-команда
-            if token in self.latex_category_map:
-                category = self.latex_category_map[token]
-                if category == 'constant':
+            category = self.latex_category_map.get(token, None)
+            if category is not None:
+                # Маппинг категорий в теги
+                if category == 'NUM':
                     encoded.append('<NUM>')
-                elif category == 'symbols':
+                elif category == 'VAR':
                     encoded.append('<VAR>')
+                elif category == 'CONST':
+                    encoded.append('<NUM>')  # или что подходит
                 else:
-                    # Оставить оригинальный токен без замены
                     encoded.append(token)
-
-            # Случай 2: одиночный символ
             else:
+                # одиночные символы
                 if token in self.number_chars:
                     encoded.append('<NUM>')
                 elif token in self.var_chars:
                     encoded.append('<VAR>')
                 else:
                     encoded.append('<UNO>')
-
-        # Объединить подряд идущие одинаковые метки
         return self._merge_continuous(encoded)
 
     def _merge_continuous(self, encoded):
@@ -159,7 +156,7 @@ if __name__ == "__main__":
     test_case = r"\int_{a}^{b} f(x) dx + \sum_{i=1}^{n} ii"  # Исходный ввод
     tokens = tokenizer.tokenize(test_case)
     encoded = tokenizer.encode(test_case)
-    decode = tokenizer.decode(encoded)
+    decode = tokenizer.decode(  encoded)
 
     print("Исходный ввод:", test_case)
     print("Результат токенизации:", tokens)

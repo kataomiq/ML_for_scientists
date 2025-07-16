@@ -67,16 +67,15 @@ def show_full_classification_report(true, prediction, class_labels=None):
     ax4.set_ylabel('Actual')
 
     ax5 = fig.add_subplot(grid[1, 2:4])
-    sns.barplot(x=overall_labels, y=overall_metrics, palette='Set2', ax=ax5)
+    sns.barplot(x=overall_labels, y=overall_metrics, hue=overall_labels,
+                palette='Set2', ax=ax5, legend=False)
     for i, v in enumerate(overall_metrics):
         ax5.text(i, v + 0.01, f'{v:.3f}', ha='center', va='bottom', fontsize=9)
     ax5.set_ylim(0, 1.1)
     ax5.set_title('Overall Metrics', fontsize=14)
     ax5.set_ylabel('Score')
     ax5.tick_params(axis='x', labelrotation=30)
-
-    plt.suptitle('Full Classification Report', fontsize=18)
-    plt.tight_layout(rect=[0, 0, 1, 0.96])
+    plt.subplots_adjust(top=0.95, hspace=0.4, wspace=0.3)
     plt.show()
 
 

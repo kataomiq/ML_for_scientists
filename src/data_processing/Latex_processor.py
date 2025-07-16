@@ -1,10 +1,10 @@
-import json
+from .formmula_tokenization import LatexTokenizer
 import pandas as pd
-import formmula_tokenization
+import json
 
 
 class LatexProcessor:
-    def __init__(self, tokenizer, json_path='enhanced_dictionary.json'):
+    def __init__(self, tokenizer, json_path='../data/processed/raw/cleaned_dictionary.json'):
         """
         Инициализация процессора
         :param tokenizer: экземпляр formmula_tokenization
@@ -166,7 +166,7 @@ class LatexProcessor:
 # Пример использования
 if __name__ == "__main__":
     # Инициализация токенизатора
-    tokenizer = formmula_tokenization('cleaned_dictionary.json')
+    tokenizer = LatexTokenizer('C:\\Users\\veder\\PycharmProjects\\ML_for_scientists\\data\\processed\\cleaned_dictionary.json')
 
     # Инициализация процессора
     processor = LatexProcessor(tokenizer, '../../data/processed/modified_dictionary.json')
@@ -177,9 +177,10 @@ if __name__ == "__main__":
     processed = processor.process(test_case)
 
     print("Оригинальный ввод:", test_case)
+    print("Токены:", tokenizer.tokenize(test_case))
     print("Результат обработки:", processed)
 
     # Экспорт словаря категорий
     df = processor.export_category_dict()
     print("\nСловарь категорий:")
-    print(df.head())
+    print(df)

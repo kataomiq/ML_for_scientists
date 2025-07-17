@@ -6,10 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="4cc73dad-962b-42cd-8646-f453bd2d8cc2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/raw/formulas.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/raw/formulas.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/svm_model.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/models/svm_model.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/vectorizer.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/models/vectorizer.pkl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data_processing/split_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data_processing/split_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data_processing/vectorization.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data_processing/vectorization.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/metrics_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/metrics_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/train_svm.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/train_svm.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +57,7 @@
     "Python.Latex_processor.executor": "Run",
     "Python.SVM.executor": "Run",
     "Python.asd.executor": "Run",
+    "Python.data_preporation.executor": "Run",
     "Python.dataset_parce.executor": "Run",
     "Python.day2.executor": "Run",
     "Python.extracted_formula.executor": "Run",

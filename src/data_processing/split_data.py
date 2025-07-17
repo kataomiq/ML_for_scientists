@@ -2,7 +2,7 @@ from sklearn.model_selection import train_test_split
 import numpy as np
 
 
-def split_data(X, Y, test_size=0.8, seed=100):
+def split_data(X, Y, test_size=0.3, seed=400):
     indices = np.arange(X.shape[0])
     X_train, X_test, Y_train, Y_test, train_idx, test_idx = train_test_split(
         X, Y, indices, test_size=test_size, random_state=seed

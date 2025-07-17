@@ -20,7 +20,7 @@ def train_model(X_train, Y_train, use_grid_search=False):
     else:
         clf = SVC(
             C=10,
-            kernel='linear',
+            kernel='rbf',
             class_weight='balanced',
             probability=True,
             max_iter=3000
